@@ -11,3 +11,4 @@ RUN sudo apt-get update \
     # keytar
     && sudo apt-get install -y libsecret-1-dev \
     && sudo rm -rf /var/lib/apt/lists/*
+RUN curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm
