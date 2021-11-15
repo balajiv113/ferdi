@@ -1,3 +1,6 @@
+tasks:
+  - init: npm install && cd recipes && pnpm i && pnpm run package && cd ..
+    command: DEBUG_COLORS=1 DEBUG=Ferdi:* npm run start:all-dev
 image:
   file: .gitpod.Dockerfile
 ports:
